@@ -1,0 +1,38 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "ads footer footer footer";
+  }
+  
+  .header { grid-area: header;
+    border: 2px solid brown; }
+  
+  .nav { grid-area: nav;
+    border: 2px solid brown; }
+  
+  .sidebar { grid-area: sidebar;
+    border: 2px solid brown; }
+  
+  .main { grid-area: main;
+    border: 2px solid brown; }
+  
+  .ads { grid-area: ads;
+    border: 2px solid brown; }
+  
+  .footer { grid-area: footer;
+    border: 2px solid brown; }
+  
+h3 {
+    padding: 15px;
+}
